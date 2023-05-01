@@ -13,7 +13,7 @@ let prevPointer = [
 //指尖
 let fingertips = [1, 8, 12, 16, 20] 
 
-const particles = []  
+const particles = []
 const particlesSecond = []  
 const spheres = []
 const pad = 5 
@@ -57,11 +57,11 @@ function setup() {
   ]
   
   handsfree = new Handsfree({
-    //showDebug: true, 
+    // showDebug: true,  
     hands: true
   })
-  //handsfree.enablePlugins('browser')
-  //handsfree.plugin.pinchScroll.disable()
+  // handsfree.enablePlugins('browser')
+  // handsfree.plugin.pinchScroll.disable()
   
   handsfree.start()
 }
@@ -84,9 +84,6 @@ class particle{
 
 // ------ drawing backgrounds and others --------
 function draw() {
-
-  
-
   background(0)
 
   hand()
@@ -235,7 +232,7 @@ console.log(Condition);
   }
 }
 
-//----------- collision ------------
+//----------- collision ------------   // 发生碰撞后会发生的行为
 function collideAll(p) {
   for (let i = p.length; i--;) 
     for (let j = i; j--;) 
